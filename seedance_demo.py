@@ -2,9 +2,9 @@ import os
 import time
 import requests
 
-API_KEY = "ark-6eda8d70-3533-4146-a8c3-e96325b9c3e4-08dc9"
-ENDPOINT_ID = "ep-20260608171120-mvkcn"
-BASE_URL = "https://ark.ap-southeast.bytepluses.com/api/v3"
+API_KEY = #"YourAPIkey creation via console, call的方式需要用双引号"
+ENDPOINT_ID = #"ep-20260608171120-mvkcn" certain model, seedance 1.5 or seedance 2.0
+BASE_URL = "https://ark.ap-southeast.bytepluses.com/api/v3" #very important to keep all end_point, region, API key in the same project
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
@@ -44,7 +44,7 @@ def submit_image_to_video(image_url: str, prompt: str, duration: int = 5, resolu
         "model": ENDPOINT_ID,
         "content": [
             {
-                "type": "image_url",
+                "type": "image_url",#through tos batch
                 "image_url": {"url": image_url},
             },
             {
